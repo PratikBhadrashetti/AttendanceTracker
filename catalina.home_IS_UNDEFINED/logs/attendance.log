@@ -1,0 +1,106 @@
+11-09-17 12:11:42.071 INFO  c.a.c.AttendanceApplication logStarting - Starting AttendanceApplication on T-BAN-602513 with PID 10760 (D:\AttendaceDetails\CurrentWorking\attendance\target\classes started by ninganagouda.patil in D:\AttendaceDetails\CurrentWorking\attendance) 
+11-09-17 12:11:42.085 INFO  c.a.c.AttendanceApplication logStartupProfileInfo - No active profile set, falling back to default profiles: default 
+11-09-17 12:11:42.133 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@323b36e0: startup date [Mon Sep 11 12:11:42 IST 2017]; root of context hierarchy 
+11-09-17 12:11:42.318 INFO  o.h.v.i.u.Version <clinit> - HV000001: Hibernate Validator 5.2.4.Final 
+11-09-17 12:11:43.636 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e6f7fef8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+11-09-17 12:11:44.058 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer initialize - Tomcat initialized with port(s): 8080 (http) 
+11-09-17 12:11:44.067 INFO  o.a.c.c.StandardService log - Starting service Tomcat 
+11-09-17 12:11:44.068 INFO  o.a.c.c.StandardEngine log - Starting Servlet Engine: Apache Tomcat/8.5.6 
+11-09-17 12:11:44.595 INFO  o.a.c.c.C.[.[.[/] log - Initializing Spring embedded WebApplicationContext 
+11-09-17 12:11:44.596 INFO  o.s.w.c.ContextLoader prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2463 ms 
+11-09-17 12:11:44.766 INFO  o.s.b.w.s.ServletRegistrationBean onStartup - Mapping servlet: 'dispatcherServlet' to [/] 
+11-09-17 12:11:44.770 INFO  o.s.b.w.s.FilterRegistrationBean configure - Mapping filter: 'characterEncodingFilter' to: [/*] 
+11-09-17 12:11:44.771 INFO  o.s.b.w.s.FilterRegistrationBean configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+11-09-17 12:11:44.771 INFO  o.s.b.w.s.FilterRegistrationBean configure - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+11-09-17 12:11:44.772 INFO  o.s.b.w.s.FilterRegistrationBean configure - Mapping filter: 'requestContextFilter' to: [/*] 
+11-09-17 12:11:44.814 INFO  o.s.j.d.DriverManagerDataSource setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver 
+11-09-17 12:11:44.897 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default' 
+11-09-17 12:11:44.908 INFO  o.h.j.i.u.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+11-09-17 12:11:44.970 INFO  o.h.Version logVersion - HHH000412: Hibernate Core {5.0.11.Final} 
+11-09-17 12:11:44.972 INFO  o.h.c.Environment <clinit> - HHH000206: hibernate.properties not found 
+11-09-17 12:11:44.973 INFO  o.h.c.Environment buildBytecodeProvider - HHH000021: Bytecode provider name : javassist 
+11-09-17 12:11:45.011 INFO  o.h.a.c.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+11-09-17 12:11:45.279 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator initiateService - HHH000342: Could not obtain connection to query metadata : Unknown database 'incedoattendancetracker' 
+11-09-17 12:11:45.287 INFO  o.h.d.Dialect <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect 
+11-09-17 12:11:45.301 INFO  o.h.e.j.e.i.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null 
+11-09-17 12:11:45.717 INFO  o.h.t.h.SchemaUpdate execute - HHH000228: Running hbm2ddl schema update 
+11-09-17 12:11:45.737 WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [com/attendance/config/HibernateConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory 
+11-09-17 12:11:45.739 INFO  o.a.c.c.StandardService log - Stopping service Tomcat 
+11-09-17 12:11:45.780 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer logAutoConfigurationReport - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled. 
+11-09-17 12:11:45.790 ERROR o.s.b.SpringApplication reportFailure - Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [com/attendance/config/HibernateConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.attendance.config.AttendanceApplication.main(AttendanceApplication.java:33)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createContainerEntityManagerFactory(HibernatePersistenceProvider.java:135)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Unable to open JDBC connection for schema management target
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:42)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 22 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'incedoattendancetracker'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:196)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:159)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38)
+	... 28 common frames omitted
